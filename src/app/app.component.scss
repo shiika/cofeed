@@ -1,0 +1,16 @@
+@import "../assets/scss/variables";
+
+.home {
+    display: flex;
+    height: 100vh;
+
+    .feed {
+        flex-grow: 3;
+        background-color: aqua;
+    }
+
+    .suggest {
+        flex-grow: 1;
+        background-color: darkcyan;
+    }
+}

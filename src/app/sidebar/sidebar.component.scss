@@ -1,0 +1,100 @@
+@import "../../assets/scss/variables";
+
+
+.sidebar {
+    // background-color: #ccc;
+    // padding-left: 2rem;
+    &__logo {
+        color: $main-color;
+        padding-left: 3rem;
+        padding-right: 1.5rem;
+        font-family: 'Montserrat', 'sans-serif';
+        display: flex;
+        align-items: center;
+
+        fa-icon {
+            font-size: 2rem;
+        }
+    }
+
+    &__menu {
+        padding-top: 1rem;
+
+        h2 {
+            font-size: 1.1rem;
+            padding-left: 3rem;
+        }
+
+        &__items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+
+            fa-icon {
+                font-size: 1.3rem;
+                color: $text-color;
+            }
+
+            p {
+                margin-left: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        &__item.active {
+            box-shadow: 2px 11px 30px -6px rgb(133 133 133 / 48%);
+            -webkit-box-shadow: 2px 11px 30px -6px rgb(133 133 133 / 48%);
+            -moz-box-shadow: 2px 11px 30px -6px rgb(133 133 133 / 48%);
+
+            fa-icon {
+                color: $main-color;
+            }
+            
+            p {
+                color: $active-color;
+            }
+        }
+    }
+
+    &__acc {
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 3rem;
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            padding-left: 3rem;
+
+            &__name {
+                font-size: 1.2rem;
+                margin: 0;
+                margin-left: 0.7rem;
+            }
+
+            &__email {
+                font-size: 0.8rem;
+                color: $text-color;
+                margin: 0;
+                margin-left: 0.7rem;
+            }
+
+            &__img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: url("../../assets/img/erik-lucatero-d2MSDujJl2g-unsplash.jpg") no-repeat center center scroll;
+                background-size: cover;
+            }
+        }
+    }
+}

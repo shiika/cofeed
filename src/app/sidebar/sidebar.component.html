@@ -1,0 +1,48 @@
+<section class="sidebar">
+    <h1 class="sidebar__logo">
+      <fa-icon [icon]="faPie" style="margin-right: 0.6rem;" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#a975ff'}"></fa-icon>
+      Cofeed
+    </h1>
+
+    <section class="sidebar__menu">
+      <h2>Menu</h2>
+
+      <ul class="sidebar__menu__items">
+        <li class="sidebar__menu__item" *ngFor="let item of menu" [routerLink]="[item.link]" [routerLinkActive]="'active'">
+          <fa-icon [icon]="item.icon" [fixedWidth]="true"></fa-icon>
+          <p>{{ item.text }}</p>
+        </li>
+        <!-- <li class="sidebar__menu__item">
+          <fa-icon [icon]="faComment" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#a9b6d6'}"></fa-icon>
+          <p>Messages</p>
+        </li>
+        <li class="sidebar__menu__item">
+          <fa-icon [icon]="faUser" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#a9b6d6'}"></fa-icon>
+          <p>Profile</p>
+        </li>
+        <li class="sidebar__menu__item">
+          <fa-icon [icon]="faSave" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#a9b6d6'}"></fa-icon>
+          <p>Saved Posts</p>
+        </li>
+        <li class="sidebar__menu__item">
+          <fa-icon [icon]="faSettings" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#a9b6d6'}"></fa-icon>
+          <p>Settings</p>
+        </li> -->
+      </ul>
+
+      <div class="sidebar__acc">
+        <div class="sidebar__acc__header">
+          <h4>Account</h4>
+          <fa-icon [icon]="faCaret" style="padding-right: 1.5rem;" [fixedWidth]="true" [styles]="{'stroke': 'red', 'color': '#26396b'}"></fa-icon>
+        </div>
+        <div class="sidebar__acc__content">
+          <div class="sidebar__acc__content__img"></div>
+          <div class="sidebar__acc__content__info">
+            <h4 class="sidebar__acc__content__name">Michael</h4>
+            <h4 class="sidebar__acc__content__email">@michaelsco_</h4>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
