@@ -8,7 +8,7 @@
       <h2>Menu</h2>
 
       <ul class="sidebar__menu__items">
-        <li class="sidebar__menu__item" *ngFor="let item of menu" [routerLink]="[item.link]" [routerLinkActive]="'active'">
+        <li class="sidebar__menu__item" *ngFor="let item of menu" [routerLink]="[item.link]" [routerLinkActive]="'active'" style="cursor: pointer;">
           <fa-icon [icon]="item.icon" [fixedWidth]="true"></fa-icon>
           <p>{{ item.text }}</p>
         </li>

@@ -1,0 +1,18 @@
+<section class="suggest">
+    <div class="suggest__header">
+      <input type="text" class="suggest__header__input" placeholder="Search...">
+      <fa-icon [icon]="faBell" [fixedWidth]="true" class="suggest__header__nots"></fa-icon>
+      <fa-icon [icon]="faCloud" [fixedWidth]="true" class="suggest__header__cloud"></fa-icon>
+    </div>
+
+    <div class="suggest__content">
+      <div class="suggest__content__header">
+        <h4>Suggestions For You</h4>
+        <a>See All</a>
+      </div>
+
+      <div class="suggest__content__users">
+        <app-profile *ngFor="let user of users" [user]="user"></app-profile>
+      </div>
+    </div>
+  </section>

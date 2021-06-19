@@ -2,9 +2,19 @@
   <app-sidebar [menu]="list"></app-sidebar>
   
   <section class="feed">
-
+    <app-stories></app-stories>
+    <div class="feeds">
+      <div class="feeds__header">
+        <h3 class="feeds__header__title">Feeds</h3>
+        <nav class="feeds__header__breadcrumb">
+          <a routerLink="/feed/all" routerLinkActive="active">All</a>
+          <a routerLink="/feed/following" routerLinkActive="active">Following</a>
+          <a routerLink="/feed/popular" routerLinkActive="active">Popular</a>
+          <a routerLink="/feed/new" routerLinkActive="active">Newest</a>
+        </nav>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
   </section>
-  <section class="suggest">
-
-  </section>
+  <app-profiles></app-profiles>
 </main>

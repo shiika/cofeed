@@ -1,0 +1,118 @@
+@import "../../assets/scss/variables";
+
+.suggest {
+    flex-grow: 1;
+    background-color: #f6f9ff;
+    padding-top: 1rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    border-left: 1px solid #eaedf3;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        &__input {
+            padding: 1rem;
+            border: 2px solid #e2e2e2;
+            border-radius: 28px;
+            font-size: 1rem;
+            width: 99px;
+            color: $text-color;
+            
+            &::placeholder {
+                color: $text-color;
+                font-weight: 500;
+            }
+
+            &:focus, &:active {
+                outline: none;
+            }
+        }
+
+        &__nots {
+            font-size: 1.4rem;
+            color: #a9b6d6;
+            border: 2px solid #e2e2e2;
+            padding: 0.8rem;
+            border-radius: 50%;
+            margin: 0 0.6rem 0 2rem;
+
+        }
+
+        &__cloud {
+            font-size: 1.4rem;
+            color: white;
+            border: 2px solid transparent;
+            padding: 0.8rem;
+            border-radius: 50%;
+            background-color: $sec-color;
+        }
+
+    }
+
+    &__content {
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.3rem;
+
+            a {
+                color: $main-color;
+                font-weight: 500;
+            }
+        }
+
+        &__user {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.3rem;
+
+            &__follow {
+                border: 1px solid transparent;
+                background: $main-color;
+                padding: 0.5rem 1.2rem;
+                color: white;
+                border-radius: 7px;
+                transition: all 0.4s;
+            }
+
+            &__follow.active {
+                border: 1px solid $main-color;
+                background: transparent;
+                color: $active-color;
+            }
+
+            &__info {
+                margin-right: auto;
+                margin-left: 0.6rem;
+
+                h4:first-child {
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                }
+
+                h4:last-child {
+                    margin-top: 0.3rem;
+                    color: $text-color;
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                }
+            }
+            &__img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: url("../../assets/img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg") no-repeat center center scroll;
+                background-size: cover;
+            }
+
+        }
+    }
+}

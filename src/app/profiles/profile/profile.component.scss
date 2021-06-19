@@ -1,0 +1,69 @@
+@import "../../../assets/scss/variables";
+
+.suggest {
+
+    &__content {
+
+        &__user {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.3rem;
+        
+            &__follow {
+                border: 1px solid transparent;
+                background: $main-color;
+                padding: 0.5rem 1.2rem;
+                color: white;
+                border-radius: 7px;
+                transition: all 0.4s;
+            }
+        
+            &__follow.active {
+                border: 1px solid $main-color;
+                background: transparent;
+                color: $active-color;
+            }
+        
+            &__info {
+                margin-right: auto;
+                margin-left: 0.6rem;
+        
+                h4:first-child {
+                    margin-bottom: 0;
+                    font-size: 0.9rem;
+                }
+        
+                h4:last-child {
+                    margin-top: 0.3rem;
+                    color: $text-color;
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                }
+            }
+            &__img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            &__img--1 {
+                background: url("../../../assets/img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg") no-repeat center center scroll;
+                background-size: cover;
+
+            }
+            &__img--2 {
+                background: url("../../../assets/img/x-sLGYaQ_stMM-unsplash.jpg") no-repeat center center scroll;
+                background-size: cover;
+
+            }
+            &__img--3 {
+                background: url("../../../assets/img/harishan-kobalasingam-8PMvB4VyVXA-unsplash.jpg") no-repeat center center scroll;
+                background-size: cover;
+
+            }
+        
+        }
+    }
+}

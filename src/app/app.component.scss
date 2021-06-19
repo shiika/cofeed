@@ -2,15 +2,32 @@
 
 .home {
     display: flex;
-    height: 100vh;
+    // height: 100vh;
 
     .feed {
-        flex-grow: 3;
-        background-color: aqua;
-    }
+        flex-basis: 58%;
+        background-color: #f6f9ff;
 
-    .suggest {
-        flex-grow: 1;
-        background-color: darkcyan;
+        .feeds {
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1.5rem;
+
+                &__breadcrumb {
+
+                    a {
+                        margin: 0 0.6rem;
+                        font-weight: 500;
+                    }
+
+                    a.active {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,8 @@
+<div class="suggest__content__user">
+    <div class="suggest__content__user__img" [class]="'suggest__content__user__img--' + user.ID"></div>
+    <div class="suggest__content__user__info">
+      <h4>{{user.name}}</h4>
+      <h4>{{user.email}}</h4>
+    </div>
+    <button type="button" style="cursor: pointer;" class="suggest__content__user__follow" (click)="user.isFollowed = !user.isFollowed" [class]="user.isFollowed ? 'suggest__content__user__follow active' : 'suggest__content__user__follow'">{{user.isFollowed ? 'Followed' : "Follow"}}</button>
+  </div>

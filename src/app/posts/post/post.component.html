@@ -1,0 +1,15 @@
+<div class="post">
+    <img [src]="post.img" alt="nature image" class="post__img">
+    <div class="post__info">
+        <div class="post__info__img"></div>
+        <h4 class="post__info__name">{{post.username}}</h4>
+        <div class="post__info__likes" style="cursor: pointer;" (click)="likePost(post.ID)">
+            <fa-icon [icon]="faHeart" [fixedWidth]="true"></fa-icon>
+            <a id="count">{{post.likes}}</a>
+        </div>
+        <div class="post__info__comments" style="cursor: pointer;">
+            <fa-icon [icon]="faComments" [fixedWidth]="true"></fa-icon>
+            <a id="count">{{post.comments}}</a>
+        </div>
+    </div>
+</div>
