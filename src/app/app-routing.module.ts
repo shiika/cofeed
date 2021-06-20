@@ -19,7 +19,10 @@ const routes: Routes = [
     path: "settings", component: PlaceholderComponent
   },
   {
-    path: "", redirectTo: "feed", pathMatch: "full"
+    path: "", redirectTo: "feed", pathMatch: "full",
+  },
+  {
+    path: "**", redirectTo: "feed", pathMatch: "full",
   },
 ];
 
